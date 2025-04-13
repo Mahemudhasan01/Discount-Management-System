@@ -20,7 +20,7 @@ How to Run the Application
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-repo/discount-system.git
+git clone https://github.com/Mahemudhasan01/Discount-Management-System.git
 cd discount-system
 ```
 
