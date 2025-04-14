@@ -32,7 +32,6 @@ public class ProductController {
         return ResponseEntity.ok(product);
     }
 
-    @PreAuthorize("permitAll()")
     @PostMapping("/discount")
     public ResponseEntity<ResponseDTO<Double>> applyDiscount(@Valid @RequestBody DiscountDTO request){
         ResponseDTO<Double> response = discountService.calculateProductDiscount(request)
