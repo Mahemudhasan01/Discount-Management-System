@@ -20,7 +20,7 @@ How to Run the Application
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-repo/discount-system.git
+git clone https://github.com/Mahemudhasan01/Discount-Management-System.git
 cd discount-system
 ```
 
@@ -75,7 +75,7 @@ Content-Type: application/json
 
 ```json
 {
-  "productId": "2",
+  "productId": "1",
   "discountType": "flat",
   "discountValue": 300,
   "seasonalDiscountActive": true,
@@ -89,11 +89,9 @@ Content-Type: application/json
 
 ```json
 {
-  "productId": "2",
-  "originalPrice": 500.0,
-  "finalPrice": 0.0,
-  "discountApplied": true,
-  "message": "Flat and seasonal discounts applied. Price capped to zero."
+    "message": "Success",
+    "status": 200,
+    "data": 525.0
 }
 ```
 
