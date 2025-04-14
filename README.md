@@ -75,9 +75,11 @@ Content-Type: application/json
 
 ```json
 {
-    "message": "Success",
-    "status": 200,
-    "data": 525.0
+  "productId": "1",
+  "discountType": "flat",
+  "discountValue": 300,
+  "seasonalDiscountActive": true,
+  "quantity": 1
 }
 ```
 
@@ -87,11 +89,9 @@ Content-Type: application/json
 
 ```json
 {
-  "productId": "2",
-  "originalPrice": 500.0,
-  "finalPrice": 0.0,
-  "discountApplied": true,
-  "message": "Flat and seasonal discounts applied. Price capped to zero."
+    "message": "Success",
+    "status": 200,
+    "data": 525.0
 }
 ```
 
