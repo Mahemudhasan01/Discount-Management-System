@@ -9,6 +9,7 @@ import com.dms.repository.ProductRepository;
 import com.dms.service.DiscountService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -31,7 +32,8 @@ public class ProductController {
         return ResponseEntity.ok(product);
     }
 
-    @GetMapping("/discount")
+    @PreAuthorize("permitAll()")
+    @PostMapping("/discount")
     public ResponseEntity<ResponseDTO<Double>> applyDiscount(@Valid @RequestBody DiscountDTO request){
         ResponseDTO<Double> response = discountService.calculateProductDiscount(request)
                              .orElseThrow( () -> new InvalidDiscountAmountException(request.getDiscountValue()));
