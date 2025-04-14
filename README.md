@@ -75,11 +75,9 @@ Content-Type: application/json
 
 ```json
 {
-  "productId": "2",
-  "discountType": "flat",
-  "discountValue": 300,
-  "seasonalDiscountActive": true,
-  "quantity": 1
+    "message": "Success",
+    "status": 200,
+    "data": 525.0
 }
 ```
 
